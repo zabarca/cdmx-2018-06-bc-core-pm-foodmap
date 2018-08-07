@@ -35,7 +35,6 @@
       				var longitude = posicion.coords.longitude;
       				var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyAlxo0HpdoyC_8BdXnhv1j5VVCx9pGWY9k";
       				output.innerHTML ="<img src='"+imgURL+"'>";
-
       			}
       			function error(){
       				output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";

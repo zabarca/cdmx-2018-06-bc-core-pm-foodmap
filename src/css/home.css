@@ -29,11 +29,12 @@ p{
   font-size: 15pt;
 }
 .card {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   display: inline-flex;
   margin: 0.5rem;
-  background-color: #FF009A;
+  /* background-image:url("image/burguer.jpg"); */
+  /* background-color: #FF009A; */
   color: #FFFFFF;
   text-align: center;
 }
