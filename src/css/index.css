@@ -1,0 +1,26 @@
+.splash{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body{
+  background: linear-gradient(#ffe6ff, #ffffff);
+
+}
+h1{
+  padding-top: 10%;
+  font-family: 'Lobster', cursive;
+  font-size: 60pt;
+  color: #ff1ac6;
+}
+h2{
+  font-family: 'Lobster';
+}
+img{
+  height: 250px;
+  width: auto;
+}

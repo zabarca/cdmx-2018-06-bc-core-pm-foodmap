@@ -1,0 +1,39 @@
+body{
+  background-color: #ffccf2;
+}
+h1{
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-family: 'Lobster', cursive;
+  font-size: 20pt;
+  color: #ff1ac6;
+}
+.container{
+  display: flex;
+  border: 0px solid black;
+  height: 100px;
+  width: 400px;
+  justify-content: center;
+  align-items: center
+}
+#map{
+  padding: 2%;
+}
+img{
+  border-radius: 8%;
+  max-width: 100%;
+  height: auto;
+}
+p{
+  font-family: 'Lobster', cursive;
+  font-size: 15pt;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  display: inline-flex;
+  margin: 0.5rem;
+  background-color: #FF009A;
+  color: #FFFFFF;
+  text-align: center;
+}

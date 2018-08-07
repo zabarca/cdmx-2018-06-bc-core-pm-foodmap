@@ -1,0 +1,17 @@
+
+{
+  "hamburguesas":[
+      {
+        "place":"Bucher and Sons",
+        "phone":"55101313",
+        "review":"Brutcher and Sons ofrece hamburguesas preparadas de manera única en un ambiente acogedor; encuéntralas en las sucursales de Polanco, Roma, Alameda, Pedregal",
+        "address":"Calle Madero 33"
+      },
+      {
+        "place":"Caipirinha",
+        "phone":"26439000",
+        "review":"La barra de ensaladas ofrece numerosas alternativas y más de 40 aderezos para completarlas; entre las recomendaciones están las papitas cambray asadas en la churrasca, además de la feijoada tradicional platillo brasileño con frijoles y arroz, que aquí acompañan con carne seca. ",
+        "address":"Vía Gustavo Baz Prada 43"
+    }
+]
+}

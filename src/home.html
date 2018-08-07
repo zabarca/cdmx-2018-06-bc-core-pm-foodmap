@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="mc.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Food Map</title>
+  </head>
+  <body>
+    <div class="text-center" id="titulo">
+      <h1>Busca lugar ideal para disfrutar con tus amigas!!</h1>
+      <!-- iniciando geolocalización -->
+      <div id="map"></div>
+      <button class="btn btn-dark"onclick="findMe()">Quiero ver mi ubicación</button>
+      	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlxo0HpdoyC_8BdXnhv1j5VVCx9pGWY9k"></script>
+      	<script>
+      		function findMe(){
+      			var output = document.getElementById('map');
+      			// Verificar si soporta geolocalizacion
+      			if (navigator.geolocation) {
+      				output.innerHTML = "<p>Buscado tu ubicación</p>";
+      			}else{
+      				output.innerHTML = "<p>No te podemos localizar</p>";
+      			}
+      			//Obtenemos latitud y longitud
+      			function localizacion(posicion){
+      				var latitude = posicion.coords.latitude;
+      				var longitude = posicion.coords.longitude;
+      				var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyAlxo0HpdoyC_8BdXnhv1j5VVCx9pGWY9k";
+      				output.innerHTML ="<img src='"+imgURL+"'>";
+
+      			}
+      			function error(){
+      				output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
+      			}
+      			navigator.geolocation.getCurrentPosition(localizacion,error);
+      		}
+      	</script>
+
+      <div class="container">
+        <div class="form-inline">
+      <input type="text" class="form-control form-control-lg" name="" value="" placeholder="Qué se te antoja?" id="food-to-search">
+      <button type="button" class="btn btn-dark" id="search">Buscar</button>
+      </div>
+    </div>
+    </div>
+    <button id="btn" class="btn btn-dark">Ver Lugares</button>
+  <button id="delete" class="btn btn-dark">Eliminar Busqueda</button>
+  <div id="result">
+</div>
+
+
+
+<script type="js/main.js"></script>
+<script src="js/data.js"></script>
+
+
+  </body>
+</html>
