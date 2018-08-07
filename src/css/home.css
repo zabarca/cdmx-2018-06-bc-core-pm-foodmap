@@ -11,8 +11,8 @@ h1{
 .container{
   display: flex;
   border: 0px solid black;
-  height: 100px;
-  width: 400px;
+  height: auto;
+  width: auto;
   justify-content: center;
   align-items: center
 }
@@ -29,12 +29,10 @@ p{
   font-size: 15pt;
 }
 .card {
-  width: 500px;
-  height: 500px;
+  width: auto;
+  height: auto;
   display: inline-flex;
   margin: 0.5rem;
-  /* background-image:url("image/burguer.jpg"); */
-  /* background-color: #FF009A; */
-  color: #FFFFFF;
+  color: #000000;
   text-align: center;
 }

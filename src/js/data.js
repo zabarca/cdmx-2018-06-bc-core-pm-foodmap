@@ -1,6 +1,5 @@
-//const url= "https://raw.githubusercontent.com/zabarca/cdmx-2018-06-bc-core-pm-foodmap/master/src/data/menu.json";
+const url= "https://raw.githubusercontent.com/zabarca/cdmx-2018-06-bc-core-pm-foodmap/master/src/data/menu.json";
 function renderInfo (data) {
-    //let result = "";
     console.log(Object.values(data)[0]);
        const info = Object.values(data)[0];
        let result = "";
@@ -16,8 +15,6 @@ function renderInfo (data) {
        </div>`
 }
         document.getElementById('tarjeta').innerHTML=result;
-        // container.innerHTML=result;
-   //});
 }
 document.getElementById('delete').addEventListener('click', (event) =>{
   container.innerHTML = '';
@@ -32,8 +29,4 @@ window.onload = () =>{
       renderInfo(data);
       });
     });
-    // .catch(error =>{
-    //      console.log("error");
-    // });
-
 };
