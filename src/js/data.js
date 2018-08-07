@@ -1,4 +1,4 @@
-const url= "https://raw.githubusercontent.com/zabarca/cdmx-2018-06-bc-core-pm-foodmap/master/src/data/menu.json";
+//const url= "https://raw.githubusercontent.com/zabarca/cdmx-2018-06-bc-core-pm-foodmap/master/src/data/menu.json";
 function renderInfo (data) {
     //let result = "";
     console.log(Object.values(data)[0]);
